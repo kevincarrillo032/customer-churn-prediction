@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 import pickle
+import os
 
 # Load the saved model
 model = pickle.load(open('churnmodel.pkl', 'rb'))
@@ -63,4 +64,5 @@ def predict_churn():
     return jsonify({'prediction': prediction})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
