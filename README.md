@@ -4,9 +4,14 @@ This project aims to predict customer churn for a telecommunications company usi
 ## Overview
 The project consists of the following components:
 
-Data Preprocessing: The TelcoCustomerChurn.csv file contains the dataset used for training the machine learning model. The ModelSelection.ipynb notebook covers data cleaning, feature engineering, and encoding categorical variables.
-Model Training: The Train_model.ipynb notebook focuses on training various machine learning models and selecting the best-performing one based on evaluation metrics.
-Flask Web Application: The app.py file contains the Flask web application code, allowing users to interact with the trained model through a simple user interface.
+**Data Preprocessing:** 
+The TelcoCustomerChurn.csv file contains the dataset used for training the machine learning model. The ModelSelection.ipynb notebook covers data cleaning, feature engineering, and encoding categorical variables.
+
+**Model Training:** 
+The Train_model.ipynb notebook focuses on training various machine learning models and selecting the best-performing one based on evaluation metrics.
+
+**Flask Web Application:** 
+The app.py file contains the Flask web application code, allowing users to interact with the trained model through a simple user interface.
 
 ## Getting Started
 To clone and deploy this project, follow these steps:
